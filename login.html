@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-drawings no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="css/login.css"/>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+        .vali_success{
+            background:url("img/ok.png") no-repeat;
+            padding-left:20px;
+            width:0px;height:20px;
+            overflow:hidden;
+        }
+    </style>
+
+</head>
+<body>
+
+<div style="width: 1024px;height:600px;margin: 0 auto;" class="container">
+
+     	<header class="codrops-header">
+            <a href="02_index.html">
+                <img src="img/header/logo-1.png" alt=""/>
+            </a>
+            <h3>
+                欢迎登录
+            </h3>
+            <a href="02_index.html">首页</a>
+     	</header>
+
+    <div id="main" class="main">
+        <figure style="height: 500px;">
+            <div class="drawings mac">
+                <img class="illustration" src="img/register/imac.png" alt="iMac Illustration" />
+                <svg class="line-drawing" id="mac" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+                    <path d="M 257.85024,158.16843 754.90716,35.953537 731.06035,405.57906 228.78695,448.8014 z" />
+                    <path d="m 259.83736,136.30872 c 0,0 -6.74232,0.97288 -11.61303,5.46502 -3.96751,3.659 -6.12527,9.40831 -7.01729,20.86596 l -36.5158,346.77284 c 0,0 -3.47753,13.41382 10.68151,14.15903 l 517.67468,-21.11485 c 0,0 18.38216,0.74522 19.87257,-19.62369 L 784.07068,11.384991 c 0,0 0.059,-13.07475 -23.20111,-7.2266959 L 259.83736,136.30872 z" />
+                    <path d="m 211.29271,522.89381 c 0,0 12.5259,6.63947 19.72988,5.64573 l 513.45197,-19.12737 c 0,0 18.87884,0.74557 21.61112,-18.87848 l 29.5596,-462.528221 c 0,0 1.49047,-10.184447 -13.54272,-21.4997553" />
+                    <path d="M 208.59466,472.34637 756.27723,432.02629" />
+                    <path d="m 591.36015,515.11602 11.15099,41.36862 c 0,0 8.62435,33.16197 -11.15099,33.16197 l -55.35924,4.26821 c 0,0 -9.65275,0.58387 -13.08781,0.58387 -1.35069,0 -5.16991,0.0265 -5.16991,0.0265 l -149.57016,-0.0347 c 0,0 -1.45726,0.12035 -1.52173,-0.0853 -0.14195,-0.4531 1.2173,-0.44973 1.2173,-0.44973 l 93.42473,-4.68143 c 0,0 23.85536,1.49042 23.85127,-27.57288 l -2.70885,-42.52741" />
+                    <path d="m 595.82547,514.94947 11.52956,43.3982 c 0,0 8.23944,32.78936 -11.52956,38.00586 h -58.52044 l -12.10971,0.99374 -16.58099,-0.61332 -128.7355,0.17849 c 0,0 -10.74373,-0.45795 -13.22753,-2.50727" />
+                    <path d="m 486.38703,90.292617 c -0.3846,2.126175 -1.9686,3.619643 -3.5379,3.335758 -1.5693,-0.283875 -2.5297,-2.237606 -2.1451,-4.363775 0.38461,-2.12617 1.96859,-3.619642 3.53789,-3.335762 1.56931,0.283879 2.52971,2.23761 2.14511,4.363779 z" />
+                    <path d="m 483.95449,571.8934 120.41968,0" />
+                    <path class="line-round" d="m 783.49986,166.74023 -9.12881,133.48624" />
+                    <path class="line-round" d="m 773.91008,309.26031 -1.81646,29.43591" />
+                </svg>
+                <div>
+                    <form id="register">
+                            <div>
+                                <a href="">用户注册</a>
+                                <!--<a href="">直接登录</a>-->
+                            </div>
+                            <div>
+                                <output>用户名</output>
+                                <input type="text" id="uname" name="uname" placeholder="6-12位内的字母、数字或下划线的组合"/>
+                                <span>
+                                </span>
+                            </div>
+                            <div>
+                                <output>用户密码</output>
+                                <input type="password" id="upwd" name="upwd" placeholder="6-12位内的字母、数字或下划线的组合"/>
+                                <span>
+                                </span>
+                            </div>
+                            <div class="hidden" id="vcode">
+                                <img src="data/_code.php" class="change_img"> <a href="#" class="change_vcode">看不清换一张</a>
+                                <input type="text" name="vcode" placeholder="验证码" required="">
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+                                <ul>
+                                    <li></li>
+                                    <li><a href="#" id="submit">登录</a></li>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a  id="reset" href="#">重置</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <figcaption>
+                <h2>Anything Is Impossible</h2>
+                <p>Life is full of confusing and disordering Particular time,a particular location,Do the arranged thing of ten million time in the brain,Step by step ,the life is hard to avoid delicacy and stiffness No enthusiasm forever,No unexpected happening of surprising and pleasing So,only silently ask myself in mind Next happiness,when will come?</p>
+            </figcaption>
+        </figure>
+
+    </div>
+</div><!-- /container -->
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/login.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/svganimations.js"></script>
+
+</body>
+</html>

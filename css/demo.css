@@ -1,0 +1,82 @@
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	background: #f9f9f9;
+	color: #6c6e6f;
+	font-weight: 300;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-size: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #59666d;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #6c6e6f;
+	outline: none;
+}
+
+.demo-drawings body {
+	/*background: #F17370;*/
+	background: #FEFEFE;
+	/*color: #fff;*/
+	color: #000;
+}
+
+.demo-drawings a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.7);
+	outline: none;
+}
+
+.demo-drawings a:hover, a:focus {
+	color: #fff;
+	outline: none;
+}
+
+
+.codrops-header {
+	width: 1024px;
+	display: flex;
+	justify-content:space-between;
+	/*border:1px solid #000000;*/
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	height: 85px;
+	/*border-bottom: 1px double #5E6163;*/
+}
+
+.demo-drawings{
+	margin: 0 auto 3em;
+}
+
+.demo-drawings .codrops-header {
+	background: rgba(228,228,228,0.7);
+}
+
+.codrops-header>:first-child{
+	  position: absolute;
+	  left: 50px;
+	  top: -10px;
+}
+.codrops-header>:nth-child(2){
+	position: absolute;
+	top: 35px;
+	left: 235px;
+	font-size: 28px;
+	color: #000000;
+}
+.codrops-header>:last-child{
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	font-size: 20px;
+	color: #000000;
+}

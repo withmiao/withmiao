@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body{
+	/*font-family: "微软雅黑";*/
+}
+
+.clearfix{ 
+  *zoom: 1; 
+}
+.clearfix:before, 
+.clearfix:after { 
+  display: table; 
+  line-height: 0; 
+  content: ""; 
+}
+.clearfix:after { 
+  clear: both; 
+}
+.popup-container{
+	/*position: fixed;*/
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	/*height: 100%;*/
+	height: 422px;
+	background-color: rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+.img-flex{
+	position: absolute;
+}
+.img-flex ul{
+	font-size: 0;
+}
+.img-flex ul li{
+	display: block;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+}

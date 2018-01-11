@@ -1,0 +1,90 @@
+ /*		尾部信息*/
+ul,li,a,img,p,body{
+    text-decoration:none;
+    margin:0;
+    list-style:none;
+    vertical-align:bottom;
+    padding:0;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+#footer{
+    width: 1024px;
+    margin:0 auto;
+}
+#footer #guide{
+    display:flex;
+    justify-content:center;
+    padding:20px 0;
+    margin-bottom:15px;
+}
+#footer #guide li{
+    /*width:80px;*/
+    font-size:15px;
+    color:#666;
+    text-align:center;
+    margin:0 100px;
+}
+ #footer #guide li img{
+     width: 1100px;
+ }
+#footer #bottom_info{
+    width:1024px;
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
+}
+#footer #bottom_info ul{
+    width:320px;
+}
+/*		******左侧信息*******/
+#footer #bottom_info ul.f_left li:nth-child(2){
+    font-size:30px;
+    color:#a0a0a0;
+    font-family:"华文行楷";
+}
+#footer #bottom_info ul.f_left li{
+    width:285px;
+}
+/*		********中侧信息**************/
+#bottom_info ul.f_center li{
+    width:105px;
+    float:left;
+    font-size:13px;
+    line-height:30px;
+}
+#bottom_info ul.f_center li a{
+    color:#808080;
+}
+#footer #bottom_info ul.f_center li a.footer_text{
+    color:#333;
+    font-size:15px;
+}
+#bottom_info ul.f_center li:last-child{
+    position:relative;
+    left:110px;
+}
+/*		********右侧信息***************/
+#bottom_info ul.f_right li{
+    width:155px;
+    float:left;
+}
+#bottom_info ul.f_right li:first-child p:first-child{
+    margin-bottom:0px;
+}
+#bottom_info ul.f_right li:first-child p:nth-child(2){
+    margin-bottom:3px;
+}
+#bottom_info ul.f_right li:last-child{
+    position:relative;
+    right:20px;
+    top:14px;
+}
+#footer p.last{
+    text-align:center;
+    margin:30px 0;
+    font-size: 16px;
+}

@@ -1,0 +1,103 @@
+
+<div class="main">
+    <div class="top_container">
+        <ul>
+            <li>
+                <a href="register.html">帮助中心</a>
+            </li>
+            <li>
+                <a href="login.html">收藏本站</a>
+            </li>
+        </ul>
+        <ul id="loginList" class="list">
+            <li>
+                <a href="register.html">注册</a>
+            </li>
+            <li>
+                <a href="login.html">登录</a>
+            </li>
+        </ul>
+        <ul id="welcomeList" class="list">
+            <li>
+                <a href="javascript:;">欢迎 <span id="uname">    </span></a>
+            </li>
+            <li>
+                <a id="logout" href="javascript:;">注销</a>
+            </li>
+        </ul>
+    </div>
+    <div id="header-top" class="clear">
+        <!-- 1、左侧 ：LOGO -->
+        <div id="logo" class="lf">
+            <a href="02_index.html">
+                <img src="img/header/logo-1.png" alt="">
+            </a>
+            <div class="white"></div>
+        </div>
+        <!-- 2、中间输入框-->
+        <div id="top-input" class="lf">
+            <div class="input-box" class="lf">
+                <ul id="shelper">
+                    <!-- <li title="周大福 项链">
+                      <div class="search-item" title="周大福 项链">周大福 项链</div>
+                    </li>-->
+                </ul>
+                <input type="text" id="txtSearch" placeholder="请输入您要搜索的内容">
+
+          <span class="sort-search">
+            分类搜索
+            <i class="caret"></i>
+          </span>
+            </div>
+            <a href="#" class="search-img" data-trigger="search">
+                <img src="img/header/search.png" alt="">
+            </a>
+        </div>
+        <div id="shopping_cart">
+            <ul>
+                <li>
+                    <i data-btn="btn" class="icon iconfont">&#xe671;</i>
+                    <button style="display: none" id="btnSet"></button>
+                </li>
+                <li class="time" title="倒计时结束后清空购物车!">
+                    购物袋
+                </li>
+                <li>
+                    0
+                </li>
+
+            </ul>
+            <!--判断登录后是否显示-->
+            <div class="head_cart_logout">
+                <div>
+                    好像还未登录!<a href="login.html">马上登录</a>查看购物车吧!
+                    <span class="close">×</span>
+                </div>
+            </div>
+            <div class="head_cart_login">
+                <div>
+                    <span>购物袋</span>
+                    <output>倒计时结束后购物袋会被清空</output>
+                    <span class="close">×</span>
+                </div>
+                <div class="list-pro" style="max-height: 250px;overflow: auto">
+
+                </div>
+                <div class="re-buy">
+                   <p>
+                       <span>0</span>
+                       <span>件商品加入购物车,共计</span>
+                       <span>¥:00.00</span>
+                   </p>
+                    <ul>
+                        <li></li>
+                        <li><a href="vip_cart.html" >去结算</a></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品页</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/products.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/demo_font.css"/>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body>
+    <div>
+        <!--1、页面头部-->
+        <header id="header">
+            <!-- <iframe src="03-header.html" frameborder="0"></iframe> -->
+            <img src="img/loading.gif" alt="加载中..." >
+        </header>
+        <div id="main">
+            <!--<div class="pro-list">
+                <div class="p1">
+
+                </div>
+                <div class="p2">
+
+                </div>
+                <div class="p3">
+
+                </div>
+                <div class="p4">
+
+                </div>
+                <div class="p5">
+
+                </div>
+                <div class="p6">
+
+                </div>
+                <div class="p7">
+
+                </div>
+                <div class="p8">
+
+                </div>
+                <div class="p9">
+
+                </div>
+                <div class="p10">
+
+                </div>
+                <div class="p11">
+
+                </div>
+            </div>-->
+            <div class="popup-container">
+                <div class="img-flex"></div>
+            </div>
+            <div id="container">
+                <div class="selectNumberScreen">
+                    <div id="selectList" class="screenBox screenBackground">
+                        <dl class="listIndex" attr="terminal_brand_s">
+                            <dt>品  牌：</dt>
+                            <dd>
+                                <a href="javascript:void(0)">Apple</a>
+                                <a href="javascript:void(0)">联想</a>
+                                <a href="javascript:void(0)">小米</a>
+                                <a href="javascript:void(0)">戴尔</a>
+                                <a href="javascript:void(0)" values2="" values1="" attrval="amoi">夏新</a>
+                                <a href="javascript:void(0)" values2="" values1="" attrval="海信">海信</a>
+                                <a href="javascript:void(0)" values2="" values1="" attrval="酷派">酷派</a>
+                                <a href="javascript:void(0)" values2="" values1="" attrval="dell">dell</a>
+                                <a href="javascript:void(0)" values2="" values1="" attrval="htc">htc</a>
+                                <a href="javascript:void(0)" values2="" values1="" attrval="sony ericsson">索尼爱立信</a>
+                                <a href="javascript:void(0)" values2="" values1="" attrval="三星">三星</a>
+                                <a href="javascript:void(0)" values2="" values1="" attrval="诺基亚">诺基亚</a>
+                                <span class=more><label>更多</label><em class=open></em></span>
+                            </dd>
+                        </dl>
+                        <dl class="listIndex" attr="CPU">
+                            <dt>CPU ：</dt>
+                            <dd>
+                                <a href="javascript:void(0)">i3</a>
+                                <a href="javascript:void(0)">i5</a>
+                                <a href="javascript:void(0)">i7</a>
+                                <a href="javascript:void(0)">i7</a>
+                            </dd>
+                        </dl>
+                        <dl class=" listIndex" attr="内存">
+                            <dt>内 存：</dt>
+                            <dd>
+                                <a href="javascript:void(0)">4G</a>
+                                <a href="javascript:void(0)">8G</a>
+                                <a href="javascript:void(0)">16G</a>
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <div class="hasBeenSelected">
+                        <dl>
+                            <dt>您已选择：</dt>
+                            <dd style="DISPLAY: none" class=clearDd>
+                                <div class=clearList></div>
+                                <div style="DISPLAY: none" class="eliminateCriteria">清除筛选条件</div>
+                        </dl>
+                    </div>
+                </div>
+                <div id="product-list">
+                    <!--<div class="jdb">
+                        <a href="product_details.html?lid=${p.lid}">
+                            <img src="${p.md}"/>
+                        </a>
+                        <span>
+                                ${p.lname}
+                        </span>
+                        <div>
+                            <span>
+                                ${p.os}|${p.memory}|${p.disk}|${p.resolution}
+                            </span>
+                            <ul>
+                                <li></li>
+                                <li><a href="product_details.html?lid=${p.lid}">查看详情</a></li>
+                                <li></li>
+                            </ul>
+                            <ul>
+                                 <li>
+                                    <a style="color:#fff;" href="#" class="cart">加购物车</a>
+                                 </li>
+                            </ul>
+                            <output>
+                                ¥${p.price}
+                            </output>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="nav">
+                    <div id="sidebarcom-nav">
+                        <ul class="icon_lists">
+                            <li data-toggle="icon">
+                                <i class="icon iconfont">&#xe600;</i>
+                                <output>账号</output>
+                                <div class="name">个人中心</div>
+                                <div class="code-logout">
+                                    你好!请<a href="login.html">登录</a>|<a href="register.html">注册</a>
+                                    <span class="close">×</span>
+                                </div>
+                            </li>
+                            <li data-toggle="icon">
+                                <i class="icon iconfont">&#xe671;</i>
+                                <p>购物袋</p>
+                                <span class="count">0</span>
+                                <div class="name">我的购物车</div>
+                                <div class="code-logout">
+                                    你好!请<a href="login.html">登录</a>|<a href="register.html">注册</a>
+                                    <span class="close">×</span>
+                                </div>
+                            </li>
+                            <li data-toggle="icon">
+                                <i class="icon iconfont">&#xe64d;</i>
+                                <div class="name">我的优惠券</div>
+                                <div class="code-logout">
+                                    你好!请<a href="login.html">登录</a>|<a href="register.html">注册</a>
+                                    <span class="close">×</span>
+                                </div>
+                            </li>
+                            <li data-toggle="icon">
+                                <i class="icon iconfont">&#xe60f;</i>
+                                <div class="name">我的收藏</div>
+                                <div class="code-logout">
+                                    你好!请<a href="login.html">登录</a>|<a href="register.html">注册</a>
+                                    <span class="close">×</span>
+                                </div>
+                            </li>
+                            <li data-toggle="icon">
+                                <i class="icon iconfont">&#xe60a;</i>
+                                <div class="name">我的足迹</div>
+                                <div class="code-logout">
+                                    你好!请<a href="login.html">登录</a>|<a href="register.html">注册</a>
+                                    <span class="close">×</span>
+                                </div>
+                            </li>
+                            <li data-toggle="icon">
+                                <i class="icon iconfont">&#xe605;</i>
+                                <div class="name">回到顶部</div>
+                                <!--<div class="code">&amp;#xe605;</div>-->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="head_cart_login">
+                        <div>
+                            <span class="time">购物车</span>
+                            <output>倒计时结束后购物车会被清空</output>
+                            <span class="close">×</span>
+                        </div>
+                        <div class="list-pro" style="max-height: 80%;overflow: auto">
+                            <!--<div class="container">
+                                <div class="product">
+                                    <a href="product_details.html?lid=${p.lid}">
+                                        <img src="img/product/sm/57ad359dNd4a6f130.jpg" alt="">
+                                    </a>
+                                    <span class="desc">
+                                        <a href="product_details.html?lid=${p.lid}">Apple MacBook Air 13.3英寸笔记本 银色(Core i5 处理器/8GB内存/256GB SSD闪存 MMGG2CH/A)</a>
+                                    </span>
+                                    <p class="col">
+                                        <span>规格：</span>
+                                        <output class="color-desc"></output>
+                                    </p>
+                                </div>
+                                <div class="num">
+                                    <p class="count">
+                                        <span class="reduce">-</span>
+                                        <input type="text" value="1">
+                                        <span class="add">+</span>
+                                    </p>
+                                </div>
+                                <div class="total-price">
+                                    <span>¥</span>
+                                    <span>6899.00</span>
+                                </div>
+                            </div>-->
+
+                        </div>
+                        <div class="re-buy">
+                            <p>
+                                <span>0</span>
+                                <span>件商品加入购物车,共计</span>
+                                <span>¥0.00</span>
+                            </p>
+                            <ul>
+                                <li></li>
+                                <li><a href="vip_cart.html">立即购买</a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pages">
+                    <a href="javascript:;" class="previous disabled">上一页</a>
+                    <a href="javascript:;" class="current">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;" class="next">下一页</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--页面尾部-->
+        <footer id="footer" class="clear">
+            <!-- <iframe src="03-header.html" frameborder="0"></iframe> -->
+            <img src="img/loading.gif" alt="加载中..." >
+        </footer>
+        <script src="js/jquery-3.2.1.js"></script>
+        <!--<script src="js/jquery-ui.js"></script>-->
+        <script src="js/ajax.js"></script>
+        <script src="js/03-header.js"></script>
+        <script src="js/03_footer.js"></script>
+        <script src="js/products.js"></script>
+        <script type="text/javascript" src="js/fragment.js"></script>
+        <!--<script src="js/my.js"></script>-->
+    </div>
+<script>
+    $(function() {
+        var fragmentConfig = {
+            container : '.img-flex',//显示容器
+            line : 8,//多少行
+            column : 10,//多少列
+            width : 1025,//显示容器的宽度
+            animeTime : 10000,//最长动画时间,图片的取值将在 animeTime*0.33 + animeTime*0.66之前取值
+            img : 'img/index/banner1.png'//图片路径
+        };
+        fragmentImg(fragmentConfig);
+    });
+</script>
+</body>
+</html>
